@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Oct 23 16:19:54 2019
+# Process ID: 8968
+# Current directory: C:/Users/H.Omar/Exercies/Reg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1820 C:\Users\H.Omar\Exercies\Reg\project_1.xpr
+# Log file: C:/Users/H.Omar/Exercies/Reg/vivado.log
+# Journal file: C:/Users/H.Omar/Exercies/Reg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/H.Omar/Exercies/Reg/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/H.Omar/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Work/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+create_project temp C:/Users/H.Omar/Exercies/Reg/temp -part xc7vx485tffg1157-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Work/Vivado/2018.1/data/ip'.
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 896.719 ; gain = 0.000
+file mkdir C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new
+close [ open C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v w ]
+add_files C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'g' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj g_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Increamenter
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:26]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Work/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto ab8fdc84e99f46c2b97a8c3d2115f469 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot g_behav xil_defaultlib.g xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.g in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 917.176 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Increamenter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Increamenter_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Work/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto ab8fdc84e99f46c2b97a8c3d2115f469 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Increamenter_behav xil_defaultlib.Increamenter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Increamenter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Increamenter_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/Increamenter_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/Increamenter_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Oct 23 16:24:42 2019. For additional details about this file, please refer to the WebTalk help file at D:/Work/Vivado/2018.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 23 16:24:42 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 922.133 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Increamenter_behav -key {Behavioral:sim_1:Functional:Increamenter} -tclbatch {Increamenter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source Increamenter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Increamenter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 933.906 ; gain = 11.773
+add_force {/Increamenter/A} -radix hex {13 0ns}
+run 100 ns
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Comparator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Comparator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1412] syntax error near ; [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Comparator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Comparator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1412] syntax error near ; [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Comparator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Comparator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1412] syntax error near ; [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+ERROR: [VRFC 10-1342] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Comparator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Comparator_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:34]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Work/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto ab8fdc84e99f46c2b97a8c3d2115f469 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Comparator_behav xil_defaultlib.Comparator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Comparator_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/Comparator_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/Comparator_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Oct 23 16:28:19 2019. For additional details about this file, please refer to the WebTalk help file at D:/Work/Vivado/2018.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 23 16:28:19 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 941.547 ; gain = 0.168
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Comparator_behav -key {Behavioral:sim_1:Functional:Comparator} -tclbatch {Comparator.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source Comparator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Comparator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 950.750 ; gain = 9.402
+add_force {/Comparator/A} -radix hex {5 0ns}
+add_force {/Comparator/B} -radix hex {3 0ns}
+run 100 ns
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 956.941 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Increamenter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Increamenter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Increamenter
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:26]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Work/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto ab8fdc84e99f46c2b97a8c3d2115f469 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Increamenter_behav xil_defaultlib.Increamenter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Increamenter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Increamenter_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Increamenter_behav -key {Behavioral:sim_1:Functional:Increamenter} -tclbatch {Increamenter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source Increamenter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Increamenter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 956.941 ; gain = 0.000
+add_force {/Increamenter/A} -radix hex {5 0ns}
+run 100 ns
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MULTIPLIER' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MULTIPLIER_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLIER
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v:29]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Work/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto ab8fdc84e99f46c2b97a8c3d2115f469 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MULTIPLIER_behav xil_defaultlib.MULTIPLIER xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MULTIPLIER
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MULTIPLIER_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/MULTIPLIER_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim/xsim.dir/MULTIPLIER_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Oct 23 16:38:06 2019. For additional details about this file, please refer to the WebTalk help file at D:/Work/Vivado/2018.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 53.309 ; gain = 0.488
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 23 16:38:06 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 957.316 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/H.Omar/Exercies/Reg/temp/temp.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MULTIPLIER_behav -key {Behavioral:sim_1:Functional:MULTIPLIER} -tclbatch {MULTIPLIER.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source MULTIPLIER.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MULTIPLIER_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 965.148 ; gain = 7.832
+add_force {/MULTIPLIER/A} -radix hex {5 0ns}
+add_force {/MULTIPLIER/B} -radix hex {3 0ns}
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 970.125 ; gain = 0.000
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 970.125 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 16:39:25 2019...

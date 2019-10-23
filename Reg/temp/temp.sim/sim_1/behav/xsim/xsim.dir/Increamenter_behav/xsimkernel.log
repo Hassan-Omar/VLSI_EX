@@ -1,0 +1,7 @@
+Running: xsim.dir/Increamenter_behav/xsimk.exe -simmode gui -wdb Increamenter_behav.wdb -simrunnum 0 -socket 5106
+Design successfully loaded
+Design Loading Memory Usage: 5148 KB (Peak: 5148 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 5764 KB (Peak: 5764 KB)
+Simulation CPU Usage: 77 ms

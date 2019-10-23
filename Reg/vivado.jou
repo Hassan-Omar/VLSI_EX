@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Oct 23 16:19:54 2019
+# Process ID: 8968
+# Current directory: C:/Users/H.Omar/Exercies/Reg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1820 C:\Users\H.Omar\Exercies\Reg\project_1.xpr
+# Log file: C:/Users/H.Omar/Exercies/Reg/vivado.log
+# Journal file: C:/Users/H.Omar/Exercies/Reg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/H.Omar/Exercies/Reg/project_1.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project temp C:/Users/H.Omar/Exercies/Reg/temp -part xc7vx485tffg1157-1
+file mkdir C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new
+close [ open C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v w ]
+add_files C:/Users/H.Omar/Exercies/Reg/temp/temp.srcs/sources_1/new/g.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source Increamenter.tcl
+add_force {/Increamenter/A} -radix hex {13 0ns}
+run 100 ns
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Comparator.tcl
+add_force {/Comparator/A} -radix hex {5 0ns}
+add_force {/Comparator/B} -radix hex {3 0ns}
+run 100 ns
+current_sim simulation_1
+close_sim
+launch_simulation
+source Increamenter.tcl
+add_force {/Increamenter/A} -radix hex {5 0ns}
+run 100 ns
+launch_simulation
+source MULTIPLIER.tcl
+add_force {/MULTIPLIER/A} -radix hex {5 0ns}
+add_force {/MULTIPLIER/B} -radix hex {3 0ns}
+run 100 ns
+close_sim
+current_sim simulation_3
+close_sim
+close_sim
