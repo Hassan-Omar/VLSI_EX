@@ -29,28 +29,30 @@ module FIFO(input CLK,
        
       // this to hold the LAST ADDRESS OF THE QUEUE 
       reg [7:0]LastADD;
-      reg [5:0]pointer;
+      reg [7:0]FirstADD;
       // define array of regs to hold      
       reg [15:0] RAM [127:0];
       always@(posedge CLK) begin
           if(PO_PU && (LastADD>0)) begin
           // this means we need to pope the first Value 
-          OUT_DATA = RAM[0];
+          OUT_DATA = RAM[FirstADD];
           // MOVE all towards 
           //for(pointer=0;pointer<LastADD;pointer=pointer+1)
           //begin
          // RAM[pointer]=RAM[pointer+1];
          // end
-          LastADD=LastADD-1;
+          FirstADD=FirstADD+1;
           end  
-          else  begin
+          else  begin 
             // this means we need to push new VAL
             RAM[LastADD]=IN_DATA;
             LastADD=LastADD+1;
          end 
          //++++++++++++++++++++++++++++++
-         if(CLEAR)
+         if(CLEAR)begin
             LastADD=1;
+            FirstADD=0;
+         end
          else 
             LastADD=LastADD; 
          //++++++++++++++++++++++++++++++
