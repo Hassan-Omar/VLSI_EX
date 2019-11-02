@@ -23,44 +23,56 @@
 module FIFO(input CLK, 
             input[15:0]IN_DATA,
             input CLEAR,
-            input PO_PU,  
-            output reg F_E_FLAG, 
-            output reg [15:0]OUT_DATA);
+            input R,
+            input W,  
+            output EMPTY, 
+            output FULL , 
+            output [15:0]OUT_DATA);
        
       // this to hold the LAST ADDRESS OF THE QUEUE 
-      reg [7:0]LastADD;
-      reg [7:0]FirstADD;
+      reg [7:0]Head;
+      reg [7:0]Tail;
       // define array of regs to hold      
       reg [15:0] RAM [127:0];
       always@(posedge CLK) begin
-          if(PO_PU && (LastADD>0)) begin
-          // this means we need to pope the first Value 
-          OUT_DATA = RAM[FirstADD];
-          // MOVE all towards 
-          //for(pointer=0;pointer<LastADD;pointer=pointer+1)
-          //begin
-         // RAM[pointer]=RAM[pointer+1];
-         // end
-          FirstADD=FirstADD+1;
-          end  
-          else  begin 
-            // this means we need to push new VAL
-            RAM[LastADD]=IN_DATA;
-            LastADD=LastADD+1;
-         end 
-         //++++++++++++++++++++++++++++++
-         if(CLEAR)begin
-            LastADD=1;
-            FirstADD=0;
-         end
-         else 
-            LastADD=LastADD; 
-         //++++++++++++++++++++++++++++++
-         if(LastADD==0)
-            F_E_FLAG=0;
-         else if (LastADD==127)
-            F_E_FLAG=1; 
-         else
-            F_E_FLAG="z";
+          if(CLEAR) begin
+            Head=0; Tail=0;
+          end
+          else begin
+            Head=Head;  Tail=Tail;  
+          end
+          //+++++++++++++++++++++++++++++++++
+          if(W) begin 
+             Tail=Tail+1; 
+             RAM[Tail]=IN_DATA;
+          end
+          else
+          Tail=Tail;
+          //+++++++++++++++++++++++++++++++++
+          if(R) begin
+              // I think i will need to check if head , tail > 0 
+              Head=Head+1;
+          end
+          else
+          Head=Head;
+          //+++++++++++++++++++++++++++++++++
+
       end; 
+    
+     //discrimination between full & empty states needs a trick
+           reg isIncrement;
+           always @(posedge CLK)
+           begin
+              if(CLEAR==1)
+                  isIncrement<=0;
+              else if(R==1&&W==0)
+                  isIncrement<=0;
+              else if(W==1&&R==1'b0)
+                  isIncrement<=1;
+           end
+           
+           assign FULL= (Head==Tail)& isIncrement;
+           assign EMPTY= (Head==Tail)& !isIncrement;
+           assign OUT_DATA=RAM[Head];           
+      
 endmodule
