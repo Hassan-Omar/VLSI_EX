@@ -1,0 +1,7 @@
+Running: xsim.dir/BANYAN2_2Test_behav/xsimk.exe -simmode gui -wdb BANYAN2_2Test_behav.wdb -simrunnum 0 -socket 11129
+Design successfully loaded
+Design Loading Memory Usage: 5164 KB (Peak: 5164 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5776 KB (Peak: 5776 KB)
+Simulation CPU Usage: 30 ms

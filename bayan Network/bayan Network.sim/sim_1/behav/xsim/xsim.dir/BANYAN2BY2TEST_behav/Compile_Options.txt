@@ -1,0 +1,1 @@
+-wto "7c4ac18ffbc646c9a05290f330f8eadb" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "BANYAN2BY2TEST_behav" "xil_defaultlib.BANYAN2BY2TEST" "xil_defaultlib.glbl" -log "elaborate.log" 
