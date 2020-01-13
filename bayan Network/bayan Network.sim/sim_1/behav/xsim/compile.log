@@ -1,10 +1,6 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/BANYAN2_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BANYAN2_2
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/BANYAN2_2.v:32]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/BANYAN2_2.v:34]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/BANYAN2_2.v:36]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/BANYAN2_2.v:38]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sim_1/new/BANYAN2BY2TEST.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module BANYAN2BY2TEST
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/bayan Network/bayan Network.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sources_1/new/OmegaNetwork32by32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OmegaNetwork32by32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/H.Omar/Exercies/bayan Network/bayan Network.srcs/sim_1/new/UUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UUT

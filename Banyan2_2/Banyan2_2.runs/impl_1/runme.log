@@ -1,0 +1,67 @@
+
+*** Running vivado
+    with args -log OmegaNetwork.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source OmegaNetwork.tcl -notrace
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source OmegaNetwork.tcl -notrace
+Command: link_design -top OmegaNetwork -part xc7vx485tffg1157-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 795.797 ; gain = 484.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_0/WS0_0 has multiple drivers: ins_Banyn0_0/out_1_reg/Q, and ins_Banyn0_0/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_0/WS0_1 has multiple drivers: ins_Banyn0_0/out_2_reg/Q, and ins_Banyn0_0/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_1/WS1_0 has multiple drivers: ins_Banyn0_1/out_1_reg/Q, and ins_Banyn0_1/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_1/WS1_1 has multiple drivers: ins_Banyn0_1/out_2_reg__0/Q, and ins_Banyn0_1/out_2_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_2/OutData_OBUF[0] has multiple drivers: ins_Banyn0_2/out_1_reg__0/Q, and ins_Banyn0_2/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn0_2/OutData_OBUF[1] has multiple drivers: ins_Banyn0_2/out_2_reg__0/Q, and ins_Banyn0_2/out_2_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_0/WS0_2 has multiple drivers: ins_Banyn1_0/out_1_reg__0/Q, and ins_Banyn1_0/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_0/WS0_3 has multiple drivers: ins_Banyn1_0/out_2_reg/Q, and ins_Banyn1_0/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_1/WS1_2 has multiple drivers: ins_Banyn1_1/out_1_reg__0/Q, and ins_Banyn1_1/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_1/WS1_3 has multiple drivers: ins_Banyn1_1/out_2_reg/Q, and ins_Banyn1_1/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_2/OutData_OBUF[0] has multiple drivers: ins_Banyn1_2/out_1_reg/Q, and ins_Banyn1_2/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn1_2/OutData_OBUF[1] has multiple drivers: ins_Banyn1_2/out_2_reg/Q, and ins_Banyn1_2/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_0/WS0_4 has multiple drivers: ins_Banyn2_0/out_1_reg__0/Q, and ins_Banyn2_0/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_0/WS0_5 has multiple drivers: ins_Banyn2_0/out_2_reg/Q, and ins_Banyn2_0/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_1/WS1_4 has multiple drivers: ins_Banyn2_1/out_1_reg__0/Q, and ins_Banyn2_1/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_1/WS1_5 has multiple drivers: ins_Banyn2_1/out_2_reg/Q, and ins_Banyn2_1/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_2/OutData_OBUF[0] has multiple drivers: ins_Banyn2_2/out_1_reg/Q, and ins_Banyn2_2/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn2_2/OutData_OBUF[1] has multiple drivers: ins_Banyn2_2/out_2_reg/Q, and ins_Banyn2_2/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_0/WS0_6 has multiple drivers: ins_Banyn3_0/out_1_reg/Q, and ins_Banyn3_0/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_0/WS0_7 has multiple drivers: ins_Banyn3_0/out_2_reg__0/Q, and ins_Banyn3_0/out_2_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_1/WS1_6 has multiple drivers: ins_Banyn3_1/out_1_reg__0/Q, and ins_Banyn3_1/out_1_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_1/WS1_7 has multiple drivers: ins_Banyn3_1/out_2_reg/Q, and ins_Banyn3_1/out_2_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_2/OutData_OBUF[0] has multiple drivers: ins_Banyn3_2/out_1_reg/Q, and ins_Banyn3_2/out_1_reg__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net ins_Banyn3_2/OutData_OBUF[1] has multiple drivers: ins_Banyn3_2/out_2_reg/Q, and ins_Banyn3_2/out_2_reg__0/Q.
+INFO: [Project 1-461] DRC finished with 24 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.782 . Memory (MB): peak = 811.703 ; gain = 14.703
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 0 Warnings, 0 Critical Warnings and 25 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 16:33:45 2019...

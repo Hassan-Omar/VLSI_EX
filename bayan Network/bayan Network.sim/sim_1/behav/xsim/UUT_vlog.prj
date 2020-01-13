@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../bayan Network.srcs/sources_1/new/BANYAN2_2.v" \
+"../../../../bayan Network.srcs/sources_1/new/OmegaNetwork32by32.v" \
+"../../../../bayan Network.srcs/sim_1/new/UUT.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

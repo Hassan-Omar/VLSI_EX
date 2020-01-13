@@ -21,25 +21,14 @@
 
 
 module BANYAN2_2(
-    input [1:0] CONECCTIONSELECTOR,
-    input A_IN,
-    input B_IN,
-    output reg A_OUT,
-    output reg B_OUT
+    input X1,
+    input X2,
+    input CLK,
+    output reg Y1,
+    output reg Y2 
     );
     
-    always@(*)begin 
-            if(CONECCTIONSELECTOR==0'b00)
-                A_OUT=A_IN ; 
-            else if(CONECCTIONSELECTOR==0'b01)
-                B_OUT=A_IN ;
-            else if(CONECCTIONSELECTOR==0'b10)
-                 A_OUT=B_IN ; 
-            else if(CONECCTIONSELECTOR==0'b11)
-                 B_OUT=B_IN ; 
-            else begin
-                B_OUT="Z";
-                A_OUT="Z";
-            end
+    always@(*)begin  
+  //////////// here implments 
     end
 endmodule

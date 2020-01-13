@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Banyan2_2.srcs/sources_1/new/Banyan2_2.v" \
+"../../../../Banyan2_2.srcs/sources_1/new/omega.v" \
+"../../../../Banyan2_2.srcs/sim_1/new/UUT.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

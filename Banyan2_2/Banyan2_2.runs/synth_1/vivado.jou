@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Dec 26 16:29:27 2019
+# Process ID: 7656
+# Current directory: C:/Users/H.Omar/Exercies/Banyan2_2/Banyan2_2.runs/synth_1
+# Command line: vivado.exe -log OmegaNetwork.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OmegaNetwork.tcl
+# Log file: C:/Users/H.Omar/Exercies/Banyan2_2/Banyan2_2.runs/synth_1/OmegaNetwork.vds
+# Journal file: C:/Users/H.Omar/Exercies/Banyan2_2/Banyan2_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OmegaNetwork.tcl -notrace
